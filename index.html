@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/04b4d87301.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- page1 -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web developer</p>
+                <h1>Hi,I'm <span>Sourabh</span><br> Yadav from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- page2 -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pexels-pixabay-35183.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus similique magnam, quaerat
+                        doloremque ducimus unde vel culpa nesciunt atque, maxime error impedit enim hic voluptate
+                        facilis dolorum iusto officia non?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Adipisci, possimus enim est totam officia sed animi voluptates architecto tempore dolore minima
+                        et cupiditate quae iusto incidunt, eligendi voluptatem, deserunt numquam!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Kuch-kuch')">Kuch-kuch</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Designing Web</li>
+                            <li><span>Data Analyst</span><br>Analyst Data</li>
+                            <li><span>Web Development</span><br>Designing Web</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br>B.Tech from GGU</li>
+                            <li><span>2021</span><br> 12th from DAV</li>
+                            <li><span>2019</span><br>10th from DAV</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Kuch-kuch">
+                        <ul>
+                            <li><span>Web Development</span><br>Designing Web</li>
+                            <li><span>Data Analyst</span><br>Analyst Data</li>
+                            <li><span>Web Development</span><br>Designing Web</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- page3 -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, accusamus aspernatur, reprehenderit
+                        voluptates consectetur, eveniet commodi iste obcaecati expedita id explicabo delectus natus
+                        ducimus facilis molestias cupiditate temporibus architecto fugiat.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Data Analyst</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, accusamus aspernatur, reprehenderit
+                        voluptates consectetur, eveniet commodi iste obcaecati expedita id explicabo delectus natus
+                        ducimus facilis molestias cupiditate temporibus architecto fugiat.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-apple"></i>
+                    <h2>Kuch-kuch</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, accusamus aspernatur, reprehenderit
+                        voluptates consectetur, eveniet commodi iste obcaecati expedita id explicabo delectus natus
+                        ducimus facilis molestias cupiditate temporibus architecto fugiat.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- page 4 -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png">
+                    <div class="layer">
+                        <h3>Social Media Website</h3>
+                        <p>The website connects you to the talented people around the world</p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png">
+                    <div class="layer">
+                        <h3>Music Website</h3>
+                        <p>The website connects you to the talented people around the world</p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping Website</h3>
+                        <p>The website connects you to the talented people around the world</p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- page5 -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i>8824028745</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="sourabh">
+                        <input id="Yourname" type="text" name="Name" placeholder="Your Name" required>
+                        <input id="Youremail" type="email" name="email" placeholder="Your Email" required>
+                        <textarea id="Yourmessage" name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright@sourabh. Made with <i class="fa-solid fa-heart"></i> by Me</p>
+        </div>
+
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+            
+        }
+    </script>
+   
+    <script>
+        let form= document.getElementById('sourabh');
+        form.addEventListener('submit', (e)=>{
+            e.preventDefault()
+            let data={
+            Name: document.getElementById('Yourname').value,
+            email: document.getElementById('Youremail').value,
+            Message: document.getElementById('Yourmessage').value
+        }
+        console.log(1,data)
+         fetch("https://sheet.best/api/sheets/045eda30-5081-41fd-9396-a1597d1c38cb", { 
+      
+      method: "POST", 
+        
+    
+      body: JSON.stringify(data), 
+        
+     
+      headers: { 
+          "Content-type": "application/json; charset=UTF-8"
+      } 
+  }) 
+    
+  
+  .then(response => response.json()) 
+    
+ 
+  .then(json => console.log(json));
+        })
+
+    </script>
+   
+</body>
+
+</html>
